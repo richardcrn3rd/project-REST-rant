@@ -9,8 +9,11 @@ function Def (html) {
             <body>
                 {html.children}
             </body>
+            <footer>
+                Copyright 2024 - NC SW DEV
+            </footer>
         </html>
     )
   }
 
-module.exports = Def
+module.exports = Def;
