@@ -11,18 +11,11 @@ function Def (html) {
             <body>
             <nav>
                 <ul>
-                    <li>
-                    <a href="/">Home</a>
-                    </li>
-                    <li>
-                    <a href="/places">Places</a>
-                    </li>
-                    <li>
-                    <a href="/places/new">Add Place</a>
-                    </li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/places">Places</a></li>
+                    <li><a href="/places/new">Add Place</a></li>
                 </ul>
-                </nav>
-  
+            </nav>
                 {html.children}
             </body>
             <footer>
