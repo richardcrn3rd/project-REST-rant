@@ -6,10 +6,10 @@ function error404 () {
       <Def>
           <main>
               <h1>404: PAGE NOT FOUND</h1>
-              <p>Oops, sorry, we can't find this page!</p>
+              <p>Oops!!! sorry, we can't find this page!</p>
 
               <div>
-                Photo by <img src="/images/luke-miller-LSd5sX9ThiI-unsplash.jpg"/>
+                Photo by Luke Miller<img src="/images/luke-miller-LSd5sX9ThiI-unsplash.jpg"/>
             </div>
           </main>
       </Def>

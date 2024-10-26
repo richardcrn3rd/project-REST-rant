@@ -28,7 +28,7 @@ nav a {
 }
 
 nav a:hover {
-  color: pink;
+  color: red;
   text-decoration: none;
 }
 
@@ -38,11 +38,13 @@ body {
 }
 
 main {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
   background-color: white;
 }
 
 img {
-  max-width: 1500px;
+  max-width: 2000px;
+  max-height: 900px;
 }
+
