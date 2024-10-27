@@ -33,4 +33,4 @@ function edit_form (data) {
     )
 }
 
-module.exports = edit_form
+module.exports = edit
