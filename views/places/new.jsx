@@ -2,6 +2,7 @@ const React = require('react')
 const Def = require('../default')
 
 function new_form (data) {
+    // console.log(data)
     let message = ''
         if (data.message) {
             message = (
@@ -15,7 +16,7 @@ function new_form (data) {
           <main>
             <h1>Add a New Place</h1>
 
-            <form method="POST" action="/places">
+            <form method="POST" action="/places/${data.place.id}?_method=PUT">
 
                     <div className="form-group">
                         <label htmlFor="name">Place Name</label>
@@ -41,11 +42,6 @@ function new_form (data) {
                         <label htmlFor="cuisines">Cuisines</label>
                         <input className="form-control"  id="cuisines" name="cuisines" required />
                     </div>
-
-                    {/* <div className="form-group">
-                        <label for="founded">Founded Year</label>
-                        <input type="number" className="form-control" id="founded" name="founded" value={new Date().getFullYear()}/>
-                    </div> */}
 
                 <input className="btn btn-primary" type="submit" value="Add Place" />
             </form>

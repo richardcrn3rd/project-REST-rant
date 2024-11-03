@@ -8,7 +8,7 @@ function home () {
             <h1>REST-Rant</h1>
 
             <a href="/places">
-                <button class="btn-primary">PLACES Page</button>
+                <button className="btn-primary">PLACES Page</button>
             </a>
 
             <div>
