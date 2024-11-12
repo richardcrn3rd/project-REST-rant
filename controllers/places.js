@@ -37,7 +37,7 @@ router.put('/:id', (req, res) => {
         // Dig into req.body and make sure data is valid
         if (!req.body.pic) {
             // Default image if one is not provided
-            req.body.pic = 'http://placekitten.com/200/300'
+            req.body.pic = 'https://lh5.googleusercontent.com/p/AF1QipMXy1seSqEXdNBJdboqCWPGoFsYuU-Fn7w2cIEu=w640-h640-n-k-no'
         }
         if (!req.body.city) {
             req.body.city = 'Anytown'
