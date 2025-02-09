@@ -1,9 +1,17 @@
-require ('dotenv').config()
+// Modules and Globals
+require('dotenv').config()
 const express = require('express')
-const methodOverride = require('method-override')
 const app = express()
+const methodOverride = require ('method-override')
+const mongoose = require('mongoose')
 
-app.set ('views', __dirname + '/views')
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+
+// Express Settings
+app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
@@ -14,12 +22,12 @@ app.use(methodOverride('_method'))
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
-  res.render('home')
+    res.render('home')
 })
 
 app.get('*', (req, res) => {
-  res.render('error404')
+    res.render('error404')
 })
 
-app.listen(process.env.PORT, () => console.log("Hola!!!"))
-
+// Listen for Connections
+app.listen(process.env.PORT)
